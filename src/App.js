@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='container1'>
+      <label>Email</label>
+      <input type='text' placeholder='email'></input>
+      <label>Card-Number</label>
+      <input type='number' placeholder='**** **** **** ****'></input>
+      <div className='expiry'>
+      <label>Expiry-Date</label>
+      <input type='number' placeholder='mm/yy'></input>
+      <label>CVV</label>
+      <input type='number' placeholder='***'></input>
+      <input type='checkbox' ></input><label >I've promo code</label>
+      </div>
+     
+
     </div>
+    <div className='container2'></div>
+    </>
   );
 }
 
